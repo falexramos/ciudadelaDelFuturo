@@ -1,0 +1,8 @@
+spring:
+ jpa:
+  database: default
+  show-sql: false
+ datasource:  driver-class-name:  com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/ciu_futuro?useSSL=false
+  username: root
+  password: reaseguro
