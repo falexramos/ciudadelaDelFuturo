@@ -1,3 +1,13 @@
+# Pasos para la Instalación
+
+1. Crear el esquema ciu_futuro en la base de datos Mysql, con las tablas indicadas en el script DataBase/Constructores S.A.sql
+2. Ejecutar los insert de DataBase/INSERT MATERIALES.sql
+3. Cambiar la contraseña de la conexión a la base de datos de la aplicacion (constructores-api) por la su base de datos en constructores-api/src/main/resources/application.yml
+4. Desplegar la aplicacion (constructores-api) Java en spring tool version sts-4.6.2 o superior
+5. La aplicación WEB (ciudadelaDelFuturo/FRONT-CIUDADFUTURO/) se realizo en angular version 8 con el framework boostrap 5, desplegar de manera local, ara ver el funcionamiento
+
+
+
 # Solicitud Ciudadela Del Futuro
  La empresa “Constructores S.A.S” será la encargada de construir la “Ciudadela del Futuro”. Esta empresa requiere desarrollar una aplicación capaz de gestionar sus solicitudes de construcción en el terreno designado para la ciudadela.
  
