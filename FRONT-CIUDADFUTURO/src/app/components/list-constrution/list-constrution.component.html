@@ -1,0 +1,28 @@
+<!-- construcciones por tipo -->
+<div class="card">
+    <div class="card-header">
+        Fechas del Proyecto
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tipo Construcción</th>
+                    <th>Estado</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cTipo of construccionTipo; let iControl=index">
+                    <td >{{cTipo["tipoConstruccion"]}}</td>
+                    <td >{{cTipo["estadoConstruccion"]}}</td>
+                    <td >{{cTipo["cantidad"]}}</td>
+                </tr>
+            </tbody>
+        </table>
+             
+    </div>
+    <!-- <div class="card-footer text-muted">
+        Footer
+    </div> -->
+</div>

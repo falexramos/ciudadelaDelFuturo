@@ -1,0 +1,54 @@
+<!-- agregar  solicitud construccion -->
+
+<div class="card">
+    <div class="card-header">
+        Solicitar construcción
+    </div>
+    <div *ngIf="mostrarMensaje==1"
+    class="alert alert-success" role="alert">
+    {{mensaje}}
+  </div>
+  
+  
+    <div class="card-body">
+        <form [formGroup]="formGroupConstrution" (ngSubmit)="enviarDatos()">
+                  
+           
+          <div class="mb-3">
+              <label for="" class="form-label">Tipo Construcción</label>
+              <select class="form-control" name="" id="" formControlName="tipoConstruccion" >
+                <option>Edificio</option>
+                <option>casa</option>
+                <option>Piscina</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Coordenada X</label>
+              <input type="number" formControlName="coordenadaX"
+                class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe la coordenada X">              
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Coordenada Y</label>
+                <input type="number" formControlName="coordenadaY"
+                  class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe la coordenada Y">              
+              </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Fecha de Inicio</label>
+              <input type="date" formControlName="fechaInicio"
+                class="form-control" name="" id="" aria-describedby="helpId" placeholder="Fecha inicio">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Fecha Fin</label>
+                <input type="date" formControlName="fechafin"
+                  class="form-control" name="" id="" aria-describedby="helpId" placeholder="Fecha fin">
+                </div>
+
+                <div class="btn-group" role="group" aria-label="">
+                    <button type="submit" class="btn btn-success">Agendar</button>
+                   
+                </div>
+        </form>    
+    </div>
+    
+</div>

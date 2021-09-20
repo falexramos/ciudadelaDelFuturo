@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="nav navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link" [routerLink]="['/construccion-tipo']" routerLinkActive="router-link-active" >Construciones</a>
+        <a class="nav-item nav-link" [routerLink]="['/fechas-proyecto']" routerLinkActive="router-link-active" >Fechas Proyecto</a>
+        <a class="nav-item nav-link" [routerLink]="['/construccion-pendiente']" routerLinkActive="router-link-active" >Construcciones Pendientes</a>
+        <a class="nav-item nav-link" [routerLink]="['/solicitud-construccion']" routerLinkActive="router-link-active" >Solicitud Construcción</a>
+        
+    </div>
+</nav>
+<div class="container">
+    
+    <router-outlet></router-outlet>
+</div>
+

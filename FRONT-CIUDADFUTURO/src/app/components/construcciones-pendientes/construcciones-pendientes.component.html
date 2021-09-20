@@ -1,0 +1,35 @@
+<!-- Ver fechas del proyecto -->
+<div class="card">
+    <div class="card-header">
+        Construcciones Pendientes
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Construcción</th>
+                    <th>Coordenada X</th>
+                    <th>Coordenada Y</th>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Fin</th>
+                    <th>Estado</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cPendiente of construccionPendiente; let iControl=index">
+                    <td >{{cPendiente["tipoConstruccion"]}}</td>
+                    <td >{{cPendiente["coordenadaX"]}}</td>
+                    <td >{{cPendiente["coordenadaY"]}}</td>
+                    <td >{{cPendiente["fechaInicio"]}}</td>
+                    <td >{{cPendiente["fechaFin"]}}</td>
+                    <td >{{cPendiente["estadoConstruccion"]}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+             
+    </div>
+    <!-- <div class="card-footer text-muted">
+        Footer
+    </div> -->
+</div>

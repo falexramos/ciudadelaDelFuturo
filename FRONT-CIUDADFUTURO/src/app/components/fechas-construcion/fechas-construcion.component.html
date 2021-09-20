@@ -1,0 +1,27 @@
+<!-- Ver fechas del proyecto -->
+<div class="card">
+    <div class="card-header">
+        Fechas del Proyecto
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Fin</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let fechas of fechasProyecto; let iControl=index">
+                    <td >{{fechas["fechaInicio"]}}</td>
+                    <td >{{fechas["fechaFin"]}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+             
+    </div>
+    <!-- <div class="card-footer text-muted">
+        Footer
+    </div> -->
+</div>
